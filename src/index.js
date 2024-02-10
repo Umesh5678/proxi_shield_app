@@ -3,11 +3,19 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import Main from './Pages/Main.jsx';
+import Technicaldatasheets from './Pages/Technicaldatasheets.jsx';
+import Saleresponsive from './Pages/Saleresponsive.jsx';
+
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    {/* <Main /> */}
+    {/* <Technicaldatasheets /> */}
+    <Saleresponsive />
+   
   </React.StrictMode>
 );
 

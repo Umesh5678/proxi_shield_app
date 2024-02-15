@@ -6,15 +6,17 @@ import reportWebVitals from './reportWebVitals';
 import Main from './Pages/Main.jsx';
 import Technicaldatasheets from './Pages/Technicaldatasheets.jsx';
 import Saleresponsive from './Pages/Saleresponsive.jsx';
+import Event from './Pages/Event.jsx';
 
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    {/* <Main /> */}
+    <Main />
     {/* <Technicaldatasheets /> */}
-    <Saleresponsive />
+    {/* <Saleresponsive /> */}
+    {/* <Event/> */}
    
   </React.StrictMode>
 );

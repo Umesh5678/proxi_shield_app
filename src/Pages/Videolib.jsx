@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function Product(){
+export default function Videolib(){
     return(
         <>
         <section>
@@ -15,10 +15,18 @@ export default function Product(){
                  </ul>
                 </div>
             </div>
-        </div>
-        <div className="container">
-        <h2 className="c1">Products</h2>
-        </div>
+            </div>
+            <div className="container mt-5">
+                <div className="row">
+                    <div className="com-md-4">
+                    <video width="320" height="240" controls>
+                        <source src="movie.mp4" type="video/mp4"/>
+                        <source src="movie.ogg" type="video/ogg"/>
+
+                        </video>
+                    </div>
+                </div>
+            </div>
         </section>
         </>
     )

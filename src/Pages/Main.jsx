@@ -8,6 +8,17 @@ import Navbar from "./Navbar.jsx";
 import Footer from "./Footer.jsx";
 import {BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
+import Event from "./Event.jsx";
+import Videolib from "./Videolib.jsx";
+import Waterproofing from "./Waterproofing.jsx";
+import Flooring from "./Flooring.jsx";
+import Repair from "./Repair.jsx";
+import Admixture from "./Admixture.jsx";
+import Grouts from "./Grouts.jsx";
+import Building from "./Building.jsx";
+
+
+
 export default function Main(){
     return(
         <>
@@ -22,6 +33,14 @@ export default function Main(){
             </Routes>
             <Footer></Footer>       
         </Router>
+        {/* <Event></Event> */}
+        {/* <Videolib></Videolib> */}
+        {/* <Waterproofing></Waterproofing> */}
+        {/* <Flooring></Flooring> */}
+        {/* <Repair></Repair> */}
+        {/* <Admixture></Admixture> */}
+        {/* <Grouts></Grouts> */}
+        {/* <Building></Building> */}
         </>
     )
 }

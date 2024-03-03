@@ -2,9 +2,9 @@ import React from "react";
 import './Style.css';
 import { NavLink } from "react-router-dom";
 
+
 export default function Navbar(){
-    return(
-        <>
+    return(        <>
         <div className="container_fluid color_format_back ">
             <div className="row">
                 <div className="col-md-6">
@@ -31,24 +31,28 @@ export default function Navbar(){
                     </button>
                     <div className="collapse navbar-collapse" id="navbarNavDropdown">
                         <ul className="navbar-nav ml-3 ">
-                        <li className="nav-item">
-                                {/* <a className="nav-link text-white ml-5" href="#">COMPANY</a> */}
-                                <NavLink className="nav-link" to='/'>Home</NavLink>
+                          <li className="nav-item">
+                          <NavLink className="nav-link text-light" to='/'>HOME</NavLink>
+                                
                             </li>
                             <li className="nav-item">
                                 {/* <a className="nav-link text-white ml-5" href="#">COMPANY</a> */}
-                                <NavLink className="nav-link" to='/Company'>COMPANY</NavLink>
+                                <NavLink className="nav-link ml-5" to='/Company'>COMPANY</NavLink>
                             </li>
                            
                             <li className="nav-item dropdown">
-                                {/* <a className="nav-link dropdown-toggle text-white ml-5" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                PRODUCTS
-                                </a> */}
-                                <NavLink className="nav-link dropdown-toggle text-white ml-5" to='/Product' id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">PRODUCTS</NavLink>
-                                <div className="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                <NavLink className="dropdown-item" href="#">Waterproofing</NavLink>
-                                <NavLink className="dropdown-item" href="#">Another action</NavLink>
-                                <NavLink className="dropdown-item" href="#">Something else here</NavLink>
+                            <NavLink className="nav-link dropdown-toggle text-white ml-5" to='/application' id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">PRODUCTS</NavLink>
+                            <div className="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                {/* <NavLink className="dropdown-item" href="/Waterproofing">Waterproofing</NavLink>
+                                <NavLink className="dropdown-item" href="#">Flooring & Coating</NavLink>
+                                <NavLink className="dropdown-item" href="#">Repair & Restoration</NavLink>
+                                <NavLink className="dropdown-item" href="#">Grouts & Anchors</NavLink>
+                                <NavLink className="dropdown-item" href="#">Building & Joint Sealants</NavLink>
+                                <NavLink className="dropdown-item" href="#">Concrete Admixture</NavLink> */}
+
+                                
+
+                                <a></a>
                                 </div>
                             </li>
                             <li className="nav-item dropdown">
@@ -111,3 +115,9 @@ export default function Navbar(){
         </>
     )
 }
+
+
+
+
+
+

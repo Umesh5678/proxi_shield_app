@@ -61,7 +61,7 @@ export default function Technicaldatasheets(){
             </div>
         </section>
         <section>
-            <div className="container mt-5">
+            <div className="container mt-5 mb-5">
                 <div className="row">
                     <div className="c9 col-md-4">
                     <h3 className="c5">Filter</h3>

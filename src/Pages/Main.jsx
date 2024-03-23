@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Index from "./Index.jsx";
 import Company from "./Company.jsx";
 import Product from "./Product.jsx";
@@ -7,7 +7,7 @@ import Contact from "./Contact.jsx";
 import Navbar from "./Navbar.jsx";
 import Footer from "./Footer.jsx";
 import {BrowserRouter as Router, Route, Routes } from "react-router-dom";
-
+import DotLoader from "react-spinners/DotLoader";
 import Event from "./Event.jsx";
 import Videolib from "./Videolib.jsx";
 import Waterproofing from "./Waterproofing.jsx";
@@ -23,10 +23,22 @@ import Saleresponsive from "./Saleresponsive.jsx";
 
 
 export default function Main(){
+    const [loading,setLoading]= useState(false)
+    useEffect(()=>{
+    setLoading(true)
+    setTimeout(()=>{
+    setLoading(false)
+    },5000)
+
+},[])
     return(
         <>
-        <Router>
-            {/* <Navbar></Navbar> */}
+            {
+                loading?
+                <div className='lod1'><DotLoader color={"#30CACF"} loading={loading}  size={100}/></div>
+                :
+                <Router>
+            
             <Nav></Nav>
             <Routes>
                 <Route path="/" element={<Index></Index>}></Route>
@@ -46,6 +58,8 @@ export default function Main(){
             </Routes>
             <Footer></Footer>       
         </Router>
+            }
+        
         {/* <Nav></Nav> */}
         {/* <Navbar></Navbar> */}
         {/* <Event></Event> */}
